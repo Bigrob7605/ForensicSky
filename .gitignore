@@ -14,6 +14,9 @@
 
 # IGNORE ALL DATA DIRECTORIES
 data/
+02_Data/
+04_Results/
+05_Visualizations/
 cleanup/
 analysis/
 detection/
