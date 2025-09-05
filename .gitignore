@@ -1,0 +1,72 @@
+# FORENSIC SKY - Git Ignore
+# =========================
+
+# IGNORE ALL DATA FILES
+*.npz
+*.npy
+*.fits
+*.zip
+*.tar.gz
+*.h5
+*.hdf5
+*.json
+*.csv
+
+# IGNORE ALL DATA DIRECTORIES
+data/
+cleanup/
+analysis/
+detection/
+docs/
+notebooks/
+simulations/
+tests/
+cosmic_string_hunt/
+DR2-master-release/
+
+# IGNORE ALL LARGE OUTPUT FILES
+*_results_*.json
+*_injected_*.json
+*_aggressive_*.json
+*_ultra_strong_*.json
+*_maximum_*.json
+FINAL_TEST_MAXIMUM_STRENGTH.json
+REAL_ENHANCED_COSMIC_STRING_RESULTS*.json
+ENHANCED_COSMIC_STRING_RESULTS.json
+PERFECT_BASE_SYSTEM_RESULTS.json
+LOCK_IN_ANALYSIS_RESULTS.json
+DISPROVE_COSMIC_STRINGS_RESULTS.json
+COSMIC_STRING_INJECTION_RESULTS.json
+SENSITIVITY_CURVE_DATA.json
+phase_coherence_data.json
+LEGIT_SMALL_TESTS_RESULTS.json
+
+# IGNORE ALL IMAGE FILES
+*.png
+*.jpg
+*.jpeg
+*.pdf
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+.venv/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.log
