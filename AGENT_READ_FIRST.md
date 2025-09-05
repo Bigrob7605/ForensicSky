@@ -5,6 +5,11 @@
 
 **WE HAVE BUILT A SELF-POLICING DISCOVERY ENGINE FOR NANOHERTZ GRAVITATIONAL WAVES**
 
+## ⚠️ **CRITICAL DATA WARNING - READ CRITICAL_DATA_WARNING.md FIRST!**
+
+**NEVER USE `cosmic_string_inputs_*.npz` FILES - THEY ARE TOY DATA!**
+**ONLY USE REAL DATA FROM `real_ipta_dr2/` DIRECTORY!**
+
 ## 🎯 **WHAT WE ACHIEVED**
 
 **We built a forensic PTA pipeline that:**

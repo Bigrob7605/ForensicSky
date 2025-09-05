@@ -118,7 +118,10 @@ A **forensic PTA pipeline** that:
 ## Usage
 
 ```bash
-# Run the main system
+# ⚠️ CRITICAL: Process REAL IPTA DR2 data first!
+python process_real_ipta_data.py
+
+# Run the main system on REAL data
 python REAL_ENHANCED_COSMIC_STRING_SYSTEM.py
 
 # Run forensic disproof
@@ -130,6 +133,12 @@ python COSMIC_STRING_INJECTION_TEST.py
 # Generate publication figures
 python SENSITIVITY_CURVE_FIGURE1.py
 ```
+
+## ⚠️ **CRITICAL DATA WARNING**
+
+**NEVER USE `cosmic_string_inputs_*.npz` FILES - THEY ARE TOY DATA!**
+**ONLY USE REAL DATA FROM `real_ipta_dr2/` DIRECTORY!**
+**See CRITICAL_DATA_WARNING.md for full details.**
 
 ## Results
 
