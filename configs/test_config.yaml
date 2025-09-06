@@ -1,0 +1,17 @@
+# Test Configuration for Cosmic String Detection Platform
+pipeline:
+  name: "RUN_MODERN_EXOTIC_HUNTER"
+  command: "python RUN_MODERN_EXOTIC_HUNTER.py"
+  
+data:
+  input_path: "02_Data/real_ipta_dr2"
+  output_path: "runs"
+  
+analysis:
+  n_trials: 50
+  n_workers: 2
+  seed: 123456
+  
+detection:
+  significance_threshold: 5.0
+  confidence_threshold: 0.95

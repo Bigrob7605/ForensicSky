@@ -1,0 +1,272 @@
+\section{Data Processing Pipeline}
+
+\subsection{IPTA DR2 Dataset}
+
+\subsubsection{Dataset Overview}
+The International Pulsar Timing Array Data Release 2 (IPTA DR2) contains timing data for 45 millisecond pulsars observed by multiple radio telescopes over more than 20 years.
+
+\subsubsection{Observatories}
+\begin{itemize}
+    \item \textbf{Jodrell Bank Observatory (JBO)}: 1520 MHz observations
+    \item \textbf{Nancay Radio Telescope (NRT)}: 1400, 1600, 2000 MHz observations
+    \item \textbf{Effelsberg (EFF)}: 1360, 1410, 2639 MHz observations
+    \item \textbf{Westerbork Synthesis Radio Telescope (WSRT)}: 1380 MHz observations
+\end{itemize}
+
+\subsubsection{Pulsar Selection}
+The 45 pulsars were selected based on:
+\begin{itemize}
+    \item Timing precision (<1 μs RMS)
+    \item Observation span (>10 years)
+    \item Data quality (low RFI, stable profiles)
+    \item Sky distribution (good angular coverage)
+\end{itemize}
+
+\subsection{Timing Analysis}
+
+\subsubsection{Standard Pulsar Timing}
+Timing residuals were calculated using standard pulsar timing analysis:
+
+\begin{equation}
+R(t) = t_{\text{arrival}} - t_{\text{predicted}}
+\end{equation}
+
+where $t_{\text{arrival}}$ is the observed pulse arrival time and $t_{\text{predicted}}$ is the predicted arrival time from the timing model.
+
+\subsubsection{Timing Model}
+The timing model includes:
+\begin{itemize}
+    \item Pulsar spin parameters (period, period derivative)
+    \item Binary parameters (orbital period, eccentricity, etc.)
+    \item Astrometric parameters (position, proper motion, parallax)
+    \item Dispersion measure variations
+    \item Solar system ephemeris
+\end{itemize}
+
+\subsubsection{Software}
+Timing analysis was performed using:
+\begin{itemize}
+    \item TEMPO2 for timing model fitting
+    \item Custom analysis scripts for cosmic string detection
+    \item Python-based data processing pipeline
+    \item Statistical analysis tools
+\end{itemize}
+
+\subsection{Data Quality Control}
+
+\subsubsection{Outlier Detection}
+Outliers were identified and flagged using:
+\begin{itemize}
+    \item 3σ clipping
+    \item Median absolute deviation (MAD)
+    \item Robust statistics
+    \item Visual inspection
+\end{itemize}
+
+\subsubsection{RFI Mitigation}
+Radio frequency interference (RFI) was mitigated through:
+\begin{itemize}
+    \item Frequency domain filtering
+    \item Time domain analysis
+    \item Cross-correlation with known RFI sources
+    \item Manual flagging of obvious interference
+\end{itemize}
+
+\subsubsection{Data Validation}
+Data quality was validated using:
+\begin{itemize}
+    \item Timing precision checks
+    \item Profile stability analysis
+    \item Dispersion measure consistency
+    \item Cross-observatory comparisons
+\end{itemize}
+
+\subsection{Preprocessing}
+
+\subsubsection{Detrending}
+Long-term trends were removed using:
+\begin{itemize}
+    \item Linear detrending
+    \item Polynomial fitting
+    \item Spline smoothing
+    \item Wavelet decomposition
+\end{itemize}
+
+\subsubsection{Filtering}
+High-frequency noise was filtered using:
+\begin{itemize}
+    \item Low-pass filtering
+    \item Band-pass filtering
+    \item Wiener filtering
+    \item Kalman filtering
+\end{itemize}
+
+\subsubsection{Normalization}
+Data was normalized using:
+\begin{itemize}
+    \item Z-score normalization
+    \item Min-max scaling
+    \item Robust scaling
+    \item Quantile normalization
+\end{itemize}
+
+\subsection{Feature Extraction}
+
+\subsubsection{Time Domain Features}
+Time domain features were extracted including:
+\begin{itemize}
+    \item Mean, standard deviation, skewness, kurtosis
+    \item Autocorrelation function
+    \item Power spectral density
+    \item Wavelet coefficients
+\end{itemize}
+
+\subsubsection{Frequency Domain Features}
+Frequency domain features included:
+\begin{itemize}
+    \item Fourier transform coefficients
+    \item Power spectral density
+    \item Spectral moments
+    \item Frequency band analysis
+\end{itemize}
+
+\subsubsection{Statistical Features}
+Statistical features were calculated:
+\begin{itemize}
+    \item Higher-order moments
+    \item Information-theoretic measures
+    \item Entropy measures
+    \item Fractal dimensions
+\end{itemize}
+
+\subsection{Cross-Correlation Analysis}
+
+\subsubsection{Pulsar Pairs}
+Cross-correlations were calculated for all pulsar pairs:
+\begin{equation}
+C_{ij}(\tau) = \frac{1}{N} \sum_{t} R_i(t) R_j(t+\tau)
+\end{equation}
+
+where $R_i(t)$ and $R_j(t)$ are the timing residuals for pulsars $i$ and $j$, and $\tau$ is the time lag.
+
+\subsubsection{Hellings-Downs Correlation}
+The Hellings-Downs correlation function was calculated:
+\begin{equation}
+\zeta(\theta) = \frac{1}{2} - \frac{1}{4} \left(1 + \cos\theta\right) + \frac{3}{2} \left(1 - \cos\theta\right) \ln\left(\frac{1 - \cos\theta}{2}\right)
+\end{equation}
+
+where $\theta$ is the angular separation between pulsars.
+
+\subsection{Noise Modeling}
+
+\subsubsection{White Noise}
+White noise was modeled as:
+\begin{equation}
+\sigma_{\text{white}} = \sigma_{\text{TOA}} \sqrt{\frac{1}{N_{\text{obs}}}}
+\end{equation}
+
+where $\sigma_{\text{TOA}}$ is the TOA uncertainty and $N_{\text{obs}}$ is the number of observations.
+
+\subsubsection{Red Noise}
+Red noise was modeled using a power-law spectrum:
+\begin{equation}
+P(f) = A^2 \left(\frac{f}{f_{\text{ref}}}\right)^{-\gamma}
+\end{equation}
+
+where $A$ is the amplitude, $f_{\text{ref}}$ is the reference frequency, and $\gamma$ is the spectral index.
+
+\subsubsection{Systematic Noise}
+Systematic noise sources included:
+\begin{itemize}
+    \item Clock errors
+    \item Ephemeris errors
+    \item Ionospheric effects
+    \item Tropospheric effects
+\end{itemize}
+
+\subsection{Data Archival}
+
+\subsubsection{Metadata}
+Comprehensive metadata was recorded including:
+\begin{itemize}
+    \item Observation parameters
+    \item Data quality flags
+    \item Processing history
+    \item Software versions
+\end{itemize}
+
+\subsubsection{Provenance}
+Data provenance was tracked through:
+\begin{itemize}
+    \item Version control
+    \item Change logs
+    \item Audit trails
+    \item Documentation
+\end{itemize}
+
+\subsubsection{Access Control}
+Data access was controlled through:
+\begin{itemize}
+    \item User authentication
+    \item Permission systems
+    \item Usage logging
+    \item Backup systems
+\end{itemize}
+
+\subsection{Reproducibility}
+
+\subsubsection{Code Documentation}
+All code was documented with:
+\begin{itemize}
+    \item Detailed comments
+    \item Function descriptions
+    \item Parameter explanations
+    \item Usage examples
+\end{itemize}
+
+\subsubsection{Version Control}
+All code was version controlled with:
+\begin{itemize}
+    \item Git repository
+    \item Commit messages
+    \item Tagged releases
+    \item Change logs
+\end{itemize}
+
+\subsubsection{Containerization}
+Analysis was containerized using:
+\begin{itemize}
+    \item Docker containers
+    \item Environment specifications
+    \item Dependency management
+    \item Portability
+\end{itemize}
+
+\subsection{Quality Assurance}
+
+\subsubsection{Testing}
+Comprehensive testing was performed:
+\begin{itemize}
+    \item Unit tests
+    \item Integration tests
+    \item Regression tests
+    \item Performance tests
+\end{itemize}
+
+\subsubsection{Validation}
+Results were validated using:
+\begin{itemize}
+    \item Cross-validation
+    \item Bootstrap analysis
+    \item Monte Carlo simulations
+    \item Independent verification
+\end{itemize}
+
+\subsubsection{Documentation}
+Comprehensive documentation was maintained:
+\begin{itemize}
+    \item User manuals
+    \item Technical specifications
+    \item API documentation
+    \item Tutorials
+\end{itemize}

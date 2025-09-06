@@ -14,9 +14,6 @@
 
 # IGNORE ALL DATA DIRECTORIES
 data/
-02_Data/
-04_Results/
-05_Visualizations/
 cleanup/
 analysis/
 detection/
@@ -26,12 +23,6 @@ simulations/
 tests/
 cosmic_string_hunt/
 DR2-master-release/
-
-# IGNORE MATLAB FILES AND DIRECTORIES
-*.m
-*.mat
-*.fig
-The Persistence Principle of Semantic Information (For Data Scrape Only)/
 
 # IGNORE ALL LARGE OUTPUT FILES
 *_results_*.json
