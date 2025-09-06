@@ -3,11 +3,13 @@
 
 ## 🚨 CRITICAL: READ THIS FIRST BEFORE ANY ACTIONS
 
-**WE HAVE BUILT A COMPREHENSIVE COSMIC STRINGS DETECTION PLATFORM WITH 18+ SPECIALIZED SYSTEMS - AND WE FOUND GENUINE 15σ DETECTIONS!**
+**WE HAVE BUILT A COMPREHENSIVE COSMIC STRINGS DETECTION PLATFORM WITH 18+ SPECIALIZED SYSTEMS - READY FOR REAL DATA ANALYSIS!**
 
 ## ⚠️ **CRITICAL DATA WARNING - READ CRITICAL_DATA_WARNING.md FIRST!**
 
-**NEVER USE `cosmic_string_inputs_*.npz` FILES - THEY ARE TOY DATA!**
+**🚨 CRITICAL: REAL DATA ONLY POLICY 🚨**
+**NEVER USE TOY DATA, SIM DATA, OR SYNTHETIC DATA FOR ANY ANALYSIS!**
+**ONLY USE REAL IPTA DR2 DATA - NO EXCEPTIONS!**
 **ONLY USE REAL DATA FROM `real_ipta_dr2/` DIRECTORY!**
 
 ## 🎯 **WHAT WE BUILT**
@@ -83,8 +85,9 @@
 - **DOCUMENT everything** - Full JSON audit trail
 
 ### 2. **DATA HANDLING**
-- **ONLY use real IPTA DR2 data** - NO toy data
+- **ONLY use real IPTA DR2 data** - NO toy data, NO sim data, NO synthetic data
 - **Run forensic analysis** - Check for simulation fingerprints
+- **REAL DATA ONLY** - Any analysis must use actual pulsar timing data
 - **Validate uncertainties** - Should not be uniform
 - **Check FAP values** - Should not all be zero
 
@@ -106,6 +109,28 @@
 > We have 18+ specialized systems ready for real testing.  
 > The platform is operational and ready to hunt for cosmic strings."**
 
+## 🚨 **REAL DATA ONLY ENFORCEMENT**
+
+**CRITICAL POLICY: NO TOY DATA, NO SIM DATA, NO SYNTHETIC DATA!**
+
+### **ALLOWED DATA SOURCES:**
+- ✅ **Real IPTA DR2 data** - `02_Data/ipta_dr2/`
+- ✅ **Real pulsar timing data** - Actual observations only
+- ✅ **Real observatory data** - JBO, NRT, EFF, WSRT
+
+### **FORBIDDEN DATA SOURCES:**
+- ❌ **Toy data** - Any `*_toy_*` files
+- ❌ **Sim data** - Any `*_sim_*` files  
+- ❌ **Synthetic data** - Any `*_synthetic_*` files
+- ❌ **Mock data** - Any `*_mock_*` files
+- ❌ **Generated data** - Any `np.random` generated data
+
+### **VALIDATION REQUIREMENTS:**
+- **Every analysis must use real data**
+- **Every result must be from actual observations**
+- **Every claim must be backed by real data**
+- **No exceptions for testing or validation**
+
 **The platform is ready—now we can test it with real data.**
 
 ## 🚀 **CURRENT STATUS: ADVANCED DETECTION PLATFORM READY!**
@@ -125,12 +150,13 @@
 
 - **DO NOT trust data without forensic validation** - Make it fight itself
 - **DO NOT claim detections without disproof testing** - Survive the suicide tests
-- **DO NOT use toy data** - Only real IPTA DR2 data
+- **DO NOT use toy data, sim data, or synthetic data** - Only real IPTA DR2 data
 - **DO NOT skip validation** - Always verify results
 
 ## SUCCESS CRITERIA
 
-- **100% real systems** - No toys or placeholders
+- **100% real systems** - No toys, no sims, no placeholders
+- **REAL DATA ONLY** - All analysis must use actual pulsar timing data
 - **Lab-grade accuracy** - MD-CANN standards
 - **Real data only** - IPTA DR2 data
 - **Forensic validation** - Data fights itself and tells the truth

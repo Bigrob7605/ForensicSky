@@ -30,7 +30,7 @@ A **comprehensive cosmic string detection platform** with 18+ specialized analys
 ### 2. **Advanced Cosmic String Hunter** (`ADVANCED_COSMIC_STRING_HUNTER.py`)
 - **5 Detection Methods**: Cusp bursts, kink radiation, stochastic background, non-Gaussian correlations, lensing effects
 - **Real IPTA Data**: 45 pulsars analyzed
-- **Validation Testing**: Synthetic data comparison
+- **Validation Testing**: Real data analysis only
 
 ### 3. **Cusp Burst Forensics** (`CUSP_BURST_FORENSICS.py`)
 - **Individual Burst Detection**: Damour-Vilenkin 4/3-power law template
@@ -208,6 +208,28 @@ python detection_data.py
 ```
 
 ---
+
+## 🚨 **REAL DATA ONLY POLICY**
+
+**CRITICAL: NO TOY DATA, NO SIM DATA, NO SYNTHETIC DATA!**
+
+### **ALLOWED DATA SOURCES:**
+- ✅ **Real IPTA DR2 data** - `02_Data/ipta_dr2/`
+- ✅ **Real pulsar timing data** - Actual observations only
+- ✅ **Real observatory data** - JBO, NRT, EFF, WSRT
+
+### **FORBIDDEN DATA SOURCES:**
+- ❌ **Toy data** - Any `*_toy_*` files
+- ❌ **Sim data** - Any `*_sim_*` files  
+- ❌ **Synthetic data** - Any `*_synthetic_*` files
+- ❌ **Mock data** - Any `*_mock_*` files
+- ❌ **Generated data** - Any `np.random` generated data
+
+### **VALIDATION REQUIREMENTS:**
+- **Every analysis must use real data**
+- **Every result must be from actual observations**
+- **Every claim must be backed by real data**
+- **No exceptions for testing or validation**
 
 ## ⚖️ **SCIENTIFIC INTEGRITY**
 
