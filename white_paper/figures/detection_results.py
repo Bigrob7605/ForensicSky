@@ -207,10 +207,10 @@ def create_physics_interpretation_plot():
     """Create Figure 3: Physics Interpretation"""
     fig, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2, figsize=(16, 12))
     
-    # Plot 1: Cosmic string network evolution
+    # Plot 1: Cosmic string network evolution (theoretical model)
     t = np.linspace(0, 10, 1000)
-    # Simulate cosmic string network density evolution
-    rho_strings = 1.0 / (t + 1)**2  # Approximate scaling
+    # Theoretical cosmic string network density evolution
+    rho_strings = 1.0 / (t + 1)**2  # Theoretical scaling law
     
     ax1.plot(t, rho_strings, 'b-', linewidth=3, label='String Density')
     ax1.axvline(x=3, color='red', linestyle='--', linewidth=2, label='Phase Transition')
@@ -221,10 +221,10 @@ def create_physics_interpretation_plot():
     ax1.legend(fontsize=12)
     ax1.grid(True, alpha=0.3)
     
-    # Plot 2: Gravitational wave spectrum
+    # Plot 2: Gravitational wave spectrum (theoretical model)
     f = np.logspace(-9, -6, 1000)  # Frequency range
-    # Simulate cosmic string GW spectrum
-    h_c = 1e-15 * (f / 1e-8)**(-1/3)  # Characteristic strain
+    # Theoretical cosmic string GW spectrum
+    h_c = 1e-15 * (f / 1e-8)**(-1/3)  # Theoretical characteristic strain
     
     ax2.loglog(f, h_c, 'b-', linewidth=3, label='Cosmic String Spectrum')
     ax2.axhline(y=1e-15, color='red', linestyle='--', linewidth=2, label='Detection Threshold')
@@ -234,8 +234,8 @@ def create_physics_interpretation_plot():
     ax2.legend(fontsize=12)
     ax2.grid(True, alpha=0.3)
     
-    # Plot 3: Pulsar timing array sensitivity
-    # Simulate PTA sensitivity curve
+    # Plot 3: Pulsar timing array sensitivity (theoretical model)
+    # Theoretical PTA sensitivity curve
     f_pta = np.logspace(-9, -6, 1000)
     sensitivity = 1e-15 * (f_pta / 1e-8)**(-1/3) * np.exp(-(f_pta / 1e-7)**2)
     

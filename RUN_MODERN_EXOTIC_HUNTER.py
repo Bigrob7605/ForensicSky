@@ -273,30 +273,16 @@ def main():
         # Try to load real data
         from IPTA_TIMING_PARSER import load_ipta_timing_data
         data = load_ipta_timing_data()
-        print(f"✅ Loaded {len(data)} real pulsars")
-    except:
-        # Generate synthetic data for demonstration
-        print("🔄 Generating synthetic data for demonstration...")
-        np.random.seed(42)
-        data = {}
+        print(f"✅ Loaded {len(data)} real pulsars from IPTA DR2")
         
-        # Generate more realistic synthetic data
-        for i in range(50):
-            pulsar_name = f"PSR_J{1000+i:04d}+{2000+i*10:04d}"
-            n_points = np.random.randint(200, 2000)
-            t = np.linspace(0, 100, n_points)
-            
-            # Multiple components for realism
-            residuals = (
-                0.1 * np.random.normal(0, 1, n_points) +  # White noise
-                0.02 * np.sin(2*np.pi*t*0.05) +          # Slow variations
-                0.01 * np.sin(2*np.pi*t*0.5) +           # Medium variations
-                0.005 * np.sin(2*np.pi*t*2.0)            # Fast variations
-            )
-            
-            data[pulsar_name] = residuals
-        
-        print(f"✅ Generated synthetic data for {len(data)} pulsars")
+        if len(data) == 0:
+            print("❌ ERROR: No real data loaded. This platform requires real IPTA DR2 data.")
+            print("Please ensure 02_Data/ipta_dr2/ contains valid pulsar timing data.")
+            return
+    except Exception as e:
+        print(f"❌ ERROR: Failed to load real IPTA DR2 data: {e}")
+        print("This platform requires real pulsar timing data - no synthetic fallback.")
+        return
     
     # Execute modern unified hunt
     print("\n🚀 Launching modern exotic physics hunt...")

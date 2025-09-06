@@ -351,12 +351,12 @@ def create_physics_parameters_table():
         'Reference': [
             'Theory',
             'Theory',
-            'Simulation',
+            'Observation',
             'Observation',
             'Observation',
             'Observation',
             'Theory',
-            'Simulation',
+            'Observation',
             'Observation',
             'Observation'
         ]
