@@ -1,7 +1,7 @@
 # 🌌 Cosmic String Detection White Paper
 ## Complete LaTeX Document Package
 
-This directory contains the complete LaTeX source files for the cosmic string detection white paper, including all figures, tables, and supplementary materials.
+This directory contains the complete LaTeX source files for the cosmic string detection platform white paper, including all figures, tables, and supplementary materials. The paper describes a comprehensive multi-method platform for analyzing pulsar timing array data in search of cosmic string signatures.
 
 ---
 
