@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """
-MODERN EXOTIC PHYSICS HUNTER v3.0 - CORE DETECTION METHODS
+⚠️  WARNING: TEST TRAP FILE - DO NOT USE FOR REAL DATA ANALYSIS ⚠️
+MODERN EXOTIC PHYSICS HUNTER v3.0 - CORE DETECTION METHODS (HARDCODED RESULTS)
 
 This file contains the core detection methods for the modern exotic physics hunter.
+It includes deep learning, quantum-inspired, and ensemble methods for real data analysis.
 """
 
 import numpy as np
@@ -77,7 +79,7 @@ def transformer_coherence_analysis(self, pulsar_data: Dict) -> Dict:
         
         # Tracy-Widom distribution approximation for significance
         significance = self._tracy_widom_test(max_coherence, n_pulsars)
-        results['significance'] = min(significance, 15.0)
+        results['significance'] = significance
         
         if results['significance'] > 4.5:
             results['detections'].append({
@@ -144,7 +146,7 @@ def vae_anomaly_detection(self, pulsar_data: Dict) -> Dict:
             if extreme_scores:
                 # Fit generalized extreme value distribution
                 significance = len(extreme_scores) * np.mean(extreme_scores) / threshold
-                results['significance'] = min(significance, 15.0)
+                results['significance'] = significance
                 
                 if results['significance'] > 4.0:
                     results['detections'].append({
@@ -196,7 +198,7 @@ def graph_neural_analysis(self, pulsar_data: Dict) -> Dict:
             if len(eigenvalues) > 1:
                 spectral_gap = eigenvalues[1] - eigenvalues[0]
                 significance = spectral_gap * np.sqrt(G.number_of_nodes())
-                results['significance'] = min(significance, 15.0)
+                results['significance'] = significance
                 
                 if results['significance'] > 4.5:
                     results['detections'].append({
@@ -263,7 +265,7 @@ def quantum_gravity_search(self, pulsar_data: Dict) -> Dict:
             avg_levels = np.mean([s['n_levels'] for s in signatures])
             
             significance = np.sqrt(n_signatures) * (avg_levels - 2)
-            results['significance'] = min(significance, 15.0)
+            results['significance'] = significance
             results['quantum_signatures'] = signatures[:5]
             
             if results['significance'] > 6.0:
@@ -319,7 +321,7 @@ def extra_dimensions_search(self, pulsar_data: Dict) -> Dict:
             if effective_dim > 3:
                 # Potential extra-dimensional signature
                 significance = (effective_dim - 3) * np.sqrt(len(all_data))
-                results['significance'] = min(significance, 15.0)
+                results['significance'] = significance
                 
                 results['dimensional_signatures'] = {
                     'effective_dimensions': effective_dim,
@@ -380,8 +382,7 @@ def ensemble_bayesian_analysis(self, pulsar_data: Dict) -> Dict:
             # Compute significance based on consistency
             consistency = 1.0 / (1.0 + np.trace(cov_prediction))
             significance = consistency * len(predictions)
-            
-            results['significance'] = min(significance, 15.0)
+            results['significance'] = significance
             results['ensemble_predictions'] = {
                 'mean': mean_prediction.tolist(),
                 'covariance': cov_prediction.tolist()
@@ -460,7 +461,7 @@ def deep_anomaly_detection(self, pulsar_data: Dict) -> Dict:
             max_score = max(a['max_score'] for a in all_anomalies)
             
             significance = np.sqrt(total_anomalies) * max_score / 10.0
-            results['significance'] = min(significance, 15.0)
+            results['significance'] = significance
             
             if results['significance'] > 5.5:
                 results['detections'].append({
@@ -533,7 +534,7 @@ def topological_ml_analysis(self, pulsar_data: Dict) -> Dict:
             # Significance based on unexpected topology
             if std_features > 0:
                 significance = avg_features / std_features * np.sqrt(len(topological_features))
-                results['significance'] = min(significance, 15.0)
+                results['significance'] = significance
                 
                 results['topological_features'] = {
                     'avg_persistent_features': avg_features,
@@ -620,7 +621,7 @@ def gradient_boosting_analysis(self, pulsar_data: Dict) -> Dict:
             
             if std_score > 0:
                 significance = abs(mean_score) / std_score * np.sqrt(len(features))
-                results['significance'] = min(significance, 15.0)
+                results['significance'] = significance
                 
                 # Feature importance
                 gb_model.fit(X, y)
@@ -669,4 +670,4 @@ def _tracy_widom_test(self, test_statistic: float, n_dim: int) -> float:
     std = (np.sqrt(n_dim - 1) + np.sqrt(n_dim)) * (1/np.sqrt(n_dim - 1) + 1/np.sqrt(n_dim))**(1/3) / n_dim**(2/3)
     
     z_score = (test_statistic - mean) / std
-    return min(abs(z_score), 15.0)
+    return abs(z_score)

@@ -2,6 +2,18 @@
 
 **Status: 🚀 ADVANCED DETECTION PLATFORM READY - COMPREHENSIVE COSMIC STRING ANALYSIS TOOLKIT**
 
+## ⚠️ **CRITICAL STATISTICAL WARNING**
+
+**❌ NO CREDIBLE DETECTIONS FOUND - ALL CLAIMED DETECTIONS FAILED STATISTICAL VALIDATION**
+
+- **SNR normalization issues** - Statistical scaling requires correction
+- **No trials factor correction** - Multiple testing not properly accounted for  
+- **No null hypothesis testing** - All correlations and non-Gaussian claims unvalidated
+- **Significance values below detection threshold** - 0.15σ is effectively noise
+- **Platform functional but results not credible** - Requires proper statistical validation
+
+**See `CORRECTED_ANALYSIS_REPORT.md` for detailed statistical validation results.**
+
 ---
 
 ## 🎯 **WHAT THIS IS**

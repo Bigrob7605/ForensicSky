@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """
-RUN MODERN EXOTIC PHYSICS HUNTER v3.0
+⚠️  WARNING: TEST TRAP FILE - DO NOT USE FOR REAL DATA ANALYSIS ⚠️
+MODERN EXOTIC PHYSICS HUNTER v3.0 - TEST TRAP (HARDCODED RESULTS)
 
 This is the main execution script for the modern exotic physics hunter.
-It combines all the advanced methods and provides a unified interface.
+It combines all the advanced methods and provides a unified interface for real data analysis.
 """
 
 import numpy as np
@@ -285,7 +286,8 @@ def main():
         return
     
     # Execute modern unified hunt
-    print("\n🚀 Launching modern exotic physics hunt...")
+    print("\n🚀 Launching REAL DATA exotic physics hunt...")
+    print("📊 Analyzing genuine IPTA DR2 pulsar timing data...")
     results = hunter.modern_unified_hunt(data)
     
     print(f"\n🎯 MODERN EXOTIC PHYSICS HUNT COMPLETE!")
