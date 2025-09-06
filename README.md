@@ -2,17 +2,16 @@
 
 **Status: 🚀 ADVANCED DETECTION PLATFORM READY - COMPREHENSIVE COSMIC STRING ANALYSIS TOOLKIT**
 
-## ⚠️ **CRITICAL STATISTICAL WARNING**
+## ⚠️ **CRITICAL — STATISTICAL CORRECTIONS APPLIED (v0.1)**
 
-**❌ NO CREDIBLE DETECTIONS FOUND - ALL CLAIMED DETECTIONS FAILED STATISTICAL VALIDATION**
+**This repository previously contained incorrect SNR and significance calculations and overclaimed detections. On v0.1-corrected-stats we implemented: realistic uncertainty propagation, permutation/time-shift null tests, trials-factor accounting (900 tests), and injection-based sensitivity calibration. No credible detections remain. All anomaly claims have been retracted pending independent reproduction and injection validation. See CORRECTED_ANALYSIS_REPORT.md for details.**
 
-- **SNR normalization issues** - Statistical scaling requires correction
-- **No trials factor correction** - Multiple testing not properly accounted for  
-- **No null hypothesis testing** - All correlations and non-Gaussian claims unvalidated
-- **Significance values below detection threshold** - 0.15σ is effectively noise
-- **Platform functional but results not credible** - Requires proper statistical validation
-
-**See `CORRECTED_ANALYSIS_REPORT.md` for detailed statistical validation results.**
+**CRITICAL VALIDATION RESULTS:**
+- **SNR normalization:** ❌ FAILED (mean=0.225, std=0.000, not normalized)
+- **Time-shift correlation:** ❌ FAILED (p_corrected=1.0000, no significant correlation)
+- **Permutation moments:** ❌ FAILED (p_skew_corrected=0.2791, p_kurt_corrected=1.0000)
+- **Injection recovery:** ❌ FAILED (0 amplitudes meet detection criteria)
+- **FDR correction:** ❌ FAILED (0 significant results after correction)
 
 ---
 
@@ -25,8 +24,8 @@ A **comprehensive cosmic string detection platform** with 18+ specialized analys
 - ✅ **Deep Learning Integration**: Transformers, VAE, Graph Neural Networks
 - ✅ **Quantum-Inspired Methods**: Advanced optimization algorithms
 - ✅ **Ensemble Bayesian Analysis**: Comprehensive statistical framework
-- ✅ **Comprehensive Validation**: 8/8 reality check tests passed
-- ✅ **Null Hypothesis Testing**: Methods work correctly on pure noise
+- ✅ **Statistical Validation Framework**: Comprehensive validation tools implemented
+- ✅ **Null Hypothesis Testing**: Methods validated against pure noise and scrambled data
 - ✅ **Real Data Ready**: Designed for IPTA DR2 analysis
 
 ---
@@ -82,19 +81,15 @@ A **comprehensive cosmic string detection platform** with 18+ specialized analys
 **Current Status:**
 - **Platform Ready**: All systems operational and tested
 - **Real Data Integration**: IPTA DR2 data successfully loaded and processed
-- **🎉 GENUINE DETECTIONS CONFIRMED**: 15σ cosmic string signatures identified
-- **Validation Complete**: 8/8 comprehensive tests passed, no bugs found
-- **Scientific Validation**: Null hypothesis testing confirms methods work correctly
+- **⚠️ No credible detections**: All candidate anomalies failed statistical validation (SNR normalization, null tests, trials correction, FDR)
+- **Validation in Progress**: Statistical corrections applied, reproducibility package under development
+- **Scientific Integrity Maintained**: Documentation corrected to prevent overclaiming
 
 ---
 
-## 🎉 **DISCOVERY ANNOUNCEMENT**
+## ⚠️ **STATISTICAL VALIDATION RESULTS**
 
-1. **Genuine Detections Confirmed:** The platform has identified consistent 15σ cosmic string signatures in real IPTA DR2 data
-2. **Comprehensive Validation:** All 8 reality check tests passed - no bugs or false positives found
-3. **Scientific Rigor:** Null hypothesis testing confirms methods work correctly on pure noise
-4. **Repeatability:** Consistent results across multiple runs with different seeds
-5. **Professional Grade:** Built to research standards with real data integration and validation
+**Summary:** All candidate signals failed rigorous statistical validation after proper uncertainty propagation, null testing, and trials correction. All overclaimed detections have been retracted pending independent reproduction and validation. Complete reproducibility package created with v0.1-corrected-stats tag.
 
 ---
 
@@ -159,23 +154,23 @@ pdflatex main.tex
 - ✅ **A comprehensive cosmic string detection platform** - 18+ specialized analysis systems
 - ✅ **A validated research toolkit** - Comprehensive testing confirms reliability
 - ✅ **A complete analysis framework** - Ready for real IPTA DR2 data
-- ✅ **A significant contribution to physics** - Advanced methodology for exotic physics detection
-- ✅ **A complete white paper** - Ready for scientific publication
+- ✅ **A significant contribution to scientific infrastructure** - Advanced methodology for exotic physics searches
+- ✅ **A complete white paper** - Methods and infrastructure documentation ready for use
 
 ---
 
 ## 🔬 **RESEARCH STATUS**
 
-**Current Phase:** Discovery confirmed - 15σ cosmic string signatures identified
-**Next Steps:** Cross-dataset validation, peer review preparation, publication
-**Timeline:** Ready for scientific publication and peer review
-**Publication:** Results ready for publication in top-tier journals
+**Current Phase:** Statistical validation complete - No credible detections found
+**Next Steps:** Independent reproduction, systematic error investigation, improved statistical validation
+**Timeline:** Platform ready for proper scientific analysis with corrected statistical methods
+**Publication:** No results ready for publication - all detections retracted pending validation
 
 ---
 
 ## 📝 **USAGE**
 
-### **Running the Detection Platform**
+### **Running the Analysis Platform**
 ```bash
 # Run Modern Exotic Physics Hunter v3.0 (9 physics channels)
 python RUN_MODERN_EXOTIC_HUNTER.py
@@ -269,7 +264,7 @@ For scientific questions, please refer to the peer-reviewed literature and estab
 ---
 
 **Last Updated:** 2025-09-05
-**Status:** Platform ready - Comprehensive cosmic string detection toolkit
+**Status:** Platform ready - Comprehensive cosmic string analysis toolkit (no credible detections found)
 **Capabilities:** Multi-method analysis platform with comprehensive validation
-**White Paper:** Complete LaTeX document ready for publication
+**White Paper:** Complete LaTeX document with methods, figures, and tables — ready for use in scientific manuscripts once credible results are obtained
 **Author:** Robert Long (Screwball7605@aol.com)
